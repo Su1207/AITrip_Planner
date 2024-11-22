@@ -1,8 +1,8 @@
-# AiTripPlanner
+# TripWhiz
 
 **Discover Your Adventure with AI: Personalized Itineraries at Your Fingertips**
 
-AiTripPlanner leverages the power of AI to help users plan their trips effortlessly. With personalized recommendations, detailed itineraries, and seamless integration with powerful APIs, the platform ensures an exceptional user experience.
+TripWhiz leverages the power of AI to help users plan their trips effortlessly. With personalized recommendations, detailed itineraries, and seamless integration with powerful APIs, the platform ensures an exceptional user experience.
 
 ---
 
