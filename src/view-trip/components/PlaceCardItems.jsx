@@ -15,7 +15,7 @@ const PlaceCardItems = ({ place }) => {
     };
 
     const result = await GetPlaceDetails(data).then((res) => {
-      // console.log(res.data?.places[0]?.photos[2]?.name);
+      console.log(res.data?.places[0]?.photos[2]?.name);
 
       const photoURL = PHOTO_REF_URL.replace(
         "{NAME}",
@@ -25,6 +25,7 @@ const PlaceCardItems = ({ place }) => {
       setPhotoUrl(photoURL);
     });
   };
+
   return (
     <div>
       <Link
@@ -42,10 +43,10 @@ const PlaceCardItems = ({ place }) => {
             <div className=" rounded-xl xs:w-[130px] xs:h-[150px] bg-slate-200"></div>
           )}
           <div className=" flex flex-col gap-2">
-            <h2 className=" font-bold text-xl">{place.placeName}</h2>
-            <p className=" text-sm text-gray-400">{place.placeDetails}</p>
-            <h2>🕙 {place.timeToTravel}</h2>
-            <h2>🎟️ {place.ticketPricing}</h2>
+            <h2 className=" font-bold text-xl">{place?.placeName}</h2>
+            <p className=" text-sm text-gray-400">{place?.placeDetails}</p>
+            <h2>🕙 {place?.timeToTravel}</h2>
+            <h2>🎟️ {place?.ticketPricing}</h2>
           </div>
         </div>
       </Link>
